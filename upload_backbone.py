@@ -4,6 +4,20 @@ from PyQt5.QtCore import *
 import sys
 import time
 
+
+class Upload_Progress_Thread(QThread):
+    _signal = pyqtSignal(int)
+    def __init__(self):
+        super(Upload_Progress_Thread, self).__init__()
+
+    def __del__(self):
+        self.wait()
+
+    def run(self):
+        for i in range(100):
+            time.sleep(0.1)
+            self._signal.emit(i)
+
 class App(QWidget):
 
     def __init__(self):
@@ -62,13 +76,17 @@ class App(QWidget):
 
         # TODO: upload file here
 
-        # setting for loop to set value of progress bar
-        for i in range(101):
-            # slowing down the loop
-            time.sleep(1)
-            # setting value to progress bar
-            self.p_bar.setValue(i)
-        print('Uploading file!')
+        # creating thread for progress bar updates
+        self.thread = Upload_Progress_Thread()
+        self.thread._signal.connect(self.prog_signal_accept)
+        self.thread.start()
+        self.upload_button.setEnabled(False)
+
+    def prog_signal_accept(self, msg):
+        self.p_bar.setValue(int(msg))
+        if self.p_bar.value() == 99:
+            self.p_bar.setValue(0)
+            self.upload_button.setEnabled(True)
 
 
 if __name__ == '__main__':

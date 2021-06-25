@@ -5,7 +5,7 @@
 USER_NAME="$1" #name for new user (will be used in service account and bucket)
 SERV_NAME="$USER_NAME-serv-acc" #name of service account for user
 BUCKET_NAME="$USER_NAME-octopi-bucket" #name of bucket for user
-SERV_KEY_FILE="$USER_NAME-keys" #file name where service key is to be stored
+SERV_KEY_FILE="~/Documents/Stanford/Sophomore/Research/Oct_Storage/$USER_NAME-keys" #file name where service key is to be stored
 
 PROJECT_ID="soe-octopi" #project where service account will be added
 ROLE_NAME="${USER_NAME//-/}_OctopiUser" #name of role for new user

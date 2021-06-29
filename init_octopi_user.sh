@@ -5,7 +5,7 @@
 USER_NAME="$1" #name for new user (will be used in service account and bucket)
 SERV_NAME="$USER_NAME-serv-acc" #name of service account for user
 BUCKET_NAME="$USER_NAME-octopi-bucket" #name of bucket for user
-SERV_KEY_FILE="~/Documents/Stanford/Sophomore/Research/Oct_Storage/$USER_NAME-keys" #file name where service key is to be stored
+SERV_KEY_FILE="../Oct_Storage/$USER_NAME-keys"
 
 PROJECT_ID="soe-octopi" #project where service account will be added
 ROLE_NAME="${USER_NAME//-/}_OctopiUser" #name of role for new user
@@ -23,7 +23,7 @@ gcloud iam roles create $ROLE_NAME --project=$PROJECT_ID --title="$USER_NAME Oct
 gcloud iam service-accounts keys create $SERV_KEY_FILE.json --iam-account=$SERV_NAME@$PROJECT_ID.iam.gserviceaccount.com
 
 # 5. set current credentials to new service account
-export GOOGLE_APPLICATION_CREDENTIALS=$SERV_KEY_FILE
+export GOOGLE_APPLICATION_CREDENTIALS="$SERV_KEY_FILE.json"
 
 # 6. connect service account to bucket (with custom permissions)
 gsutil iam ch serviceAccount:$SERV_NAME@$PROJECT_ID.iam.gserviceaccount.com:projects/$PROJECT_ID/roles/$ROLE_NAME gs://$BUCKET_NAME

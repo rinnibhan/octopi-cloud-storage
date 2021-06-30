@@ -9,9 +9,10 @@ import upload_to_cloud
 
 class App(QWidget):
 
-    def __init__(self):
+    def __init__(self, user_name="rinni"):
         super().__init__()
         self.title = 'Octopi File Upload'
+        self.user_name = user_name
         self.initUI()
 
     def initUI(self):
@@ -122,7 +123,7 @@ class App(QWidget):
     @pyqtSlot()
     def upload_file(self):
         # destination_folder_name: name of "folder" in bucket to save files to
-        upload_obj = upload_to_cloud.UploadCloud("rinni")
+        upload_obj = upload_to_cloud.UploadCloud(self.user_name)
         num_files = len(self.file_paths)
         curr_file = 1
         for file_path in self.file_paths:
@@ -139,7 +140,7 @@ class App(QWidget):
     @pyqtSlot()
     def upload_folder(self, dir_path = "-1", num_files = -1, curr_file = -1, og_dir = ""):
         # destination_folder_name: name of "folder" in bucket to save folder to
-        upload_obj = upload_to_cloud.UploadCloud("rinni")
+        upload_obj = upload_to_cloud.UploadCloud(self.user_name)
         # if in parent folder
         if num_files == -1: # if this is the top folder
             dir_path = self.file_paths[0]

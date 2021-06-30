@@ -54,10 +54,12 @@ class App(QWidget):
         dest_folder_layout.addWidget(self.pushButtonOK)
 
         # Add button to upload file to cloud
-        self.upload_button = QPushButton('Upload File', self)
+        self.upload_button = QPushButton('Upload', self)
         self.upload_button.setToolTip('Upload the chosen file')
         self.upload_button.clicked.connect(self.upload_to_bucket)
+        self.progress = QProgressBar()
         up_button_layout.addWidget(self.upload_button)
+        up_button_layout.addWidget(self.progress)
 
         # set up upload layout
         label = QLabel("Destination Folder Name")
@@ -129,6 +131,7 @@ class App(QWidget):
         for file_path in self.file_paths:
             if '/' in file_path:
                 print("Uploading file " + str(curr_file) + " out of " + str(num_files) + " files")
+                self.update_prog(curr_file, num_files)
                 curr_file += 1
                 file_name = file_path[file_path.rfind("/"):]
                 if len(self.destination_folder) == 0:
@@ -159,6 +162,7 @@ class App(QWidget):
             else:
                 if '/' in dir_file:
                     print("Uploading file " + str(curr_file) + " out of " + str(num_files) + " files")
+                    self.update_prog(curr_file, num_files)
                     curr_file += 1
                     file_path = dir_file[dir_file.find(og_dir):]
                     if len(self.destination_folder) == 0:
@@ -166,6 +170,12 @@ class App(QWidget):
                     else:
                         upload_obj.upload_wrapper(self.destination_folder + file_path, dir_file)
 
+    def update_prog(self, curr_file, num_files):
+        perc_comp = int(float(curr_file)/float(num_files) * 100)
+        self.progress.setValue(perc_comp)
+        self.progress.setTextVisible(True)
+        self.progress.setFormat("File " + str(curr_file) + " of " + str(num_files))
+        QApplication.processEvents()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

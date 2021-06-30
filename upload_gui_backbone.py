@@ -14,43 +14,6 @@ class App(QWidget):
         self.title = 'Octopi File Upload'
         self.initUI()
 
-    # def initUI(self):
-    #     # Create window: title, size, location
-    #     self.setWindowTitle(self.title)
-    #
-    #     centerPoint = QDesktopWidget().availableGeometry().center()
-    #     x_center = centerPoint.x()
-    #     y_center = centerPoint.y()
-    #     width = 300
-    #     height = 150
-    #     self.move(x_center - int(width/2), y_center - int(height/2)) # centers window
-    #     self.resize(width,height)
-    #
-    #     # Add buttons to select file/folder
-    #     self.file_button = QPushButton('Select File(s)', self)
-    #     self.file_button.setToolTip('Select file(s) for upload')
-    #     self.file_button.move(int(width/4 - self.file_button.size().width()/2), int(height/3 - self.file_button.size().height()/2))
-    #     self.file_button.clicked.connect(self.pick_file)
-    #
-    #     self.label = QLabel("OR", self)
-    #     self.label.move(int(width/2), int(height/3 - self.file_button.size().height()*0.3))
-    #
-    #     self.folder_button = QPushButton('Select Folder', self)
-    #     self.folder_button.setToolTip('Select a folder for upload')
-    #     self.folder_button.move(int(3*width/4 - self.folder_button.size().width()/2), int(height/3 - self.folder_button.size().height()/2))
-    #     self.folder_button.clicked.connect(self.pick_dir)
-    #
-    #     self.file_paths = []
-    #     self.uploading_file = True # true: uploading file(s); false: uploading a folder
-    #
-    #     # Add button to upload file to cloud
-    #     self.upload_button = QPushButton('Upload File', self)
-    #     self.upload_button.setToolTip('Upload the chosen file')
-    #     self.upload_button.move(int(width/2 - self.upload_button.size().width()/2), int(2*height/3 - self.file_button.size().height()/2))
-    #     self.upload_button.clicked.connect(self.upload_to_bucket)
-    #
-    #     self.show()
-
     def initUI(self):
         self.file_paths = []
         self.uploading_file = True  # true: uploading file(s); false: uploading a folder
@@ -154,9 +117,9 @@ class App(QWidget):
     @pyqtSlot()
     def upload_to_bucket(self):
         if self.uploading_file:
-            self.upload_file(self.destination_folder)
+            self.upload_file()
         else:
-            self.upload_folder(self.destination_folder)
+            self.upload_folder()
 
     @pyqtSlot()
     def upload_file(self):
@@ -164,7 +127,7 @@ class App(QWidget):
         upload_obj = upload_to_cloud.UploadCloud("rinni")
         for file_path in self.file_paths:
             if '/' in file_path:
-                file_name = file_path[file_path.rfind("/")+1:]
+                file_name = file_path[file_path.rfind("/"):]
                 if len(self.destination_folder) == 0:
                     upload_obj.upload_wrapper(file_name, file_path)
                 else:
@@ -183,11 +146,12 @@ class App(QWidget):
                 self.upload_folder(dir_file)
             else:
                 if '/' in dir_file:
-                    file_name = dir_file[dir_file.rfind("/")+1:]
+                    file_name = dir_file[dir_file.rfind("/"):]
+                    par_folder = dir_path[dir_path.rfind("/"):]
                     if len(self.destination_folder) == 0:
-                        upload_obj.upload_wrapper(file_name, dir_file)
+                        upload_obj.upload_wrapper(par_folder[1:] + file_name, dir_file)
                     else:
-                        upload_obj.upload_wrapper(self.destination_folder + file_name, dir_file)
+                        upload_obj.upload_wrapper(self.destination_folder + par_folder + file_name, dir_file)
         print("Done with upload!")
 
 

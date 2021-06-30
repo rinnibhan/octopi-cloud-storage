@@ -89,7 +89,6 @@ class App(QWidget):
 
     def on_pushButtonOK_clicked(self):
         self.destination_folder = self.upload_dest.text()
-        print(self.destination_folder)
 
     @pyqtSlot()
     def pick_file(self):
@@ -98,7 +97,6 @@ class App(QWidget):
         dialog.setViewMode(QFileDialog.Detail)
         dialog.setDirectory("/") # TODO: change based on system
         file_paths = dialog.getOpenFileNames(None, "Select File(s)")
-        print(file_paths[0]) # for debugging
         self.file_paths = file_paths[0]
         return file_paths
 
@@ -125,8 +123,12 @@ class App(QWidget):
     def upload_file(self):
         # destination_folder_name: name of "folder" in bucket to save files to
         upload_obj = upload_to_cloud.UploadCloud("rinni")
+        num_files = len(self.file_paths)
+        curr_file = 1
         for file_path in self.file_paths:
             if '/' in file_path:
+                print("Uploading file " + str(curr_file) + " out of " + str(num_files) + " files")
+                curr_file += 1
                 file_name = file_path[file_path.rfind("/"):]
                 if len(self.destination_folder) == 0:
                     upload_obj.upload_wrapper(file_name, file_path)
@@ -135,24 +137,33 @@ class App(QWidget):
         print("Done with upload!")
 
     @pyqtSlot()
-    def upload_folder(self):
+    def upload_folder(self, dir_path = "-1", num_files = -1, curr_file = -1, og_dir = ""):
         # destination_folder_name: name of "folder" in bucket to save folder to
         upload_obj = upload_to_cloud.UploadCloud("rinni")
-        # if uploading a folder
-        dir_path = self.file_paths[0]
+        # if in parent folder
+        if num_files == -1: # if this is the top folder
+            dir_path = self.file_paths[0]
+            num_files = 0
+            for files in os.walk(dir_path):
+                dir_files = files[2]
+                for f in dir_files:
+                    if not f.startswith("."):
+                        num_files += 1
+            curr_file = 1
+            og_dir = dir_path[dir_path.rfind("/"):]
         assert os.path.isdir(dir_path)
         for dir_file in glob.glob(dir_path + '/**'):
             if not os.path.isfile(dir_file): # if it's a nested directory
-                self.upload_folder(dir_file)
+                self.upload_folder(dir_file, num_files, curr_file, og_dir)
             else:
                 if '/' in dir_file:
-                    file_name = dir_file[dir_file.rfind("/"):]
-                    par_folder = dir_path[dir_path.rfind("/"):]
+                    print("Uploading file " + str(curr_file) + " out of " + str(num_files) + " files")
+                    curr_file += 1
+                    file_path = dir_file[dir_file.find(og_dir):]
                     if len(self.destination_folder) == 0:
-                        upload_obj.upload_wrapper(par_folder[1:] + file_name, dir_file)
+                        upload_obj.upload_wrapper(file_path[1:], dir_file)
                     else:
-                        upload_obj.upload_wrapper(self.destination_folder + par_folder + file_name, dir_file)
-        print("Done with upload!")
+                        upload_obj.upload_wrapper(self.destination_folder + file_path, dir_file)
 
 
 if __name__ == '__main__':

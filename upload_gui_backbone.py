@@ -4,83 +4,108 @@ from PyQt5.QtGui import *
 import sys
 import glob
 import os
+import shutil
 
 import upload_to_cloud
 
 class App(QWidget):
 
+    # initialize window
     def __init__(self, user_name="rinni"):
         super().__init__()
         self.title = 'Octopi File Upload'
-        self.user_name = user_name
+        self.user_name = user_name # name of user
+        self.file_paths = []  # paths of file(s)/folder to upload
+        self.uploading_file = True  # true: uploading file(s); false: uploading a folder
+        self.destination_folder = ""  # name of destination folder in bucket to upload to (if blank, upload directly into bucket)
         self.initUI()
 
+    # design UI setup
     def initUI(self):
-        self.file_paths = []
-        self.uploading_file = True  # true: uploading file(s); false: uploading a folder
-        self.destination_folder = ""
-        # Create window: title, size, location
+        # Create window
         self.setWindowTitle(self.title)
-        outer_layout = QHBoxLayout()
 
-        file_layout = QVBoxLayout()
-        # Add buttons to select file/folder
+        # Layout set up
+        final_layout = QVBoxLayout() # outermost layout
+        file_manip_layout = QHBoxLayout() # file selection/upload layout
+        file_layout = QVBoxLayout() # file selection
+        upload_layout = QVBoxLayout() # upload layout
+        dest_folder_layout = QHBoxLayout() # destination folder selection layout (within upload layout)
+        up_button_layout = QHBoxLayout() # upload process layout (within upload layout)
+
+        # Section to select file/folder
+        # select file button
         self.file_button = QPushButton('Select File(s)', self)
         self.file_button.setToolTip('Select file(s) for upload')
         self.file_button.clicked.connect(self.pick_file)
         file_layout.addWidget(self.file_button)
-
+        # OR label
         self.label = QLabel("OR", self)
         self.label.setAlignment(Qt.AlignCenter)
         file_layout.addWidget(self.label)
-
+        # select folder button
         self.folder_button = QPushButton('Select Folder', self)
         self.folder_button.setToolTip('Select a folder for upload')
         self.folder_button.clicked.connect(self.pick_dir)
         file_layout.addWidget(self.folder_button)
 
-        upload_layout = QVBoxLayout()
-        dest_folder_layout = QHBoxLayout()
-        up_button_layout = QHBoxLayout()
+        # Section to upload file/folder
 
-        # Add textbox + button to enter name of destination folder
+        # Section to select destination folder
+        # textbox to enter destination folder name
         self.upload_dest = QLineEdit()  # textbox
         self.upload_dest.returnPressed.connect(self.on_pushButtonOK_clicked)
-        self.pushButtonOK = QPushButton(self) # button
+        # OK button to choose destination folder
+        self.pushButtonOK = QPushButton(self)
         self.pushButtonOK.setText("OK")
         self.pushButtonOK.clicked.connect(self.on_pushButtonOK_clicked)
-
+        self.pushButtonOK.setToolTip("Press to save destination name; otherwise, press 'return'")
         dest_folder_layout.addWidget(self.upload_dest)
         dest_folder_layout.addWidget(self.pushButtonOK)
+        # destination folder label
+        dest_label = QLabel("Destination Folder Name")
+        dest_label.setFont(QFont('Arial', 13))
+        dest_note = QLabel("**Leave blank to upload directly into bucket**")
+        dest_note_font = QFont('Arial', 10)
+        dest_note_font.setItalic(True)
+        dest_note.setFont(dest_note_font)
 
-        # Add button to upload file to cloud
+        # Section to upload file to cloud
+        # upload button
         self.upload_button = QPushButton('Upload', self)
-        self.upload_button.setToolTip('Upload the chosen file')
+        self.upload_button.setToolTip('Upload the chosen file(s)/folder')
         self.upload_button.clicked.connect(self.upload_to_bucket)
+        # progress bar
         self.progress = QProgressBar()
         up_button_layout.addWidget(self.upload_button)
         up_button_layout.addWidget(self.progress)
 
-        # set up upload layout
-        label = QLabel("Destination Folder Name")
-        label.setFont(QFont('Arial', 13))
-        note = QLabel("**Leave blank to upload directly into bucket**")
-        note_font = QFont('Arial',10)
-        note_font.setItalic(True)
-        note.setFont(note_font)
+        # checkbox to delete files after upload
+        self.del_file_check = QCheckBox("Delete Files after Upload")
+        self.del_file_check.setToolTip('If unchecked, uploaded files will be renamed with prefix "upload_"')
 
-        upload_layout.addWidget(label)
-        upload_layout.addWidget(note)
+        upload_layout.addWidget(dest_label)
+        upload_layout.addWidget(dest_note)
         upload_layout.addLayout(dest_folder_layout)
+        upload_layout.addWidget(self.del_file_check)
         upload_layout.addLayout(up_button_layout)
 
-        outer_layout.addLayout(file_layout)
+        # name of current file being uploaded label
+        self.curr_file_name = QLabel("")
+        self.curr_file_name.setFont(QFont('Arial', 10))
+
+        # Section for file manipulation
+        file_manip_layout.addLayout(file_layout)
         self.divider = QFrame()
         self.divider.setFrameShape(QFrame.VLine)
         self.divider.setFrameShadow(QFrame.Raised)
-        outer_layout.addWidget(self.divider)
-        outer_layout.addLayout(upload_layout)
-        self.setLayout(outer_layout)
+        file_manip_layout.addWidget(self.divider)
+        file_manip_layout.addLayout(upload_layout)
+
+        # Final layout
+        final_layout.addLayout(file_manip_layout)
+        final_layout.addWidget(self.curr_file_name)
+        self.setLayout(final_layout)
 
         self.show()
 
@@ -123,14 +148,32 @@ class App(QWidget):
             self.upload_folder()
 
     @pyqtSlot()
+    def after_upload_process(self, files_uploaded):
+        if self.del_file_check.isChecked():
+            if self.uploading_file:
+                for file in files_uploaded:
+                    os.remove(file)
+                    self.curr_file_name.setText("Deleted local file: " + file)
+            else:
+                shutil.rmtree(self.file_paths[0])
+                self.curr_file_name.setText("Deleted local directory: " + self.file_paths[0])
+        else:
+            for file in files_uploaded:
+                file_name = file[file.rfind("/")+1:]
+                os.rename(file, file[:file.rfind("/")+1] + "uploaded_" + file_name)
+                self.curr_file_name.setText("Renamed local file: " + file)
+
+    @pyqtSlot()
     def upload_file(self):
         # destination_folder_name: name of "folder" in bucket to save files to
         upload_obj = upload_to_cloud.UploadCloud(self.user_name)
         num_files = len(self.file_paths)
         curr_file = 1
+        files_uploaded = []
         for file_path in self.file_paths:
             if '/' in file_path:
-                print("Uploading file " + str(curr_file) + " out of " + str(num_files) + " files")
+                files_uploaded.append(file_path)
+                self.curr_file_name.setText("Uploading " + file_path)
                 self.update_prog(curr_file, num_files)
                 curr_file += 1
                 file_name = file_path[file_path.rfind("/"):]
@@ -138,37 +181,36 @@ class App(QWidget):
                     upload_obj.upload_wrapper(file_name, file_path)
                 else:
                     upload_obj.upload_wrapper(self.destination_folder + file_name, file_path)
-        print("Done with upload!")
+        self.after_upload_process(files_uploaded)
 
     @pyqtSlot()
-    def upload_folder(self, dir_path = "-1", num_files = -1, curr_file = -1, og_dir = ""):
-        # destination_folder_name: name of "folder" in bucket to save folder to
+    def upload_folder(self):
         upload_obj = upload_to_cloud.UploadCloud(self.user_name)
-        # if in parent folder
-        if num_files == -1: # if this is the top folder
-            dir_path = self.file_paths[0]
-            num_files = 0
-            for files in os.walk(dir_path):
-                dir_files = files[2]
-                for f in dir_files:
-                    if not f.startswith("."):
-                        num_files += 1
-            curr_file = 1
-            og_dir = dir_path[dir_path.rfind("/"):]
-        assert os.path.isdir(dir_path)
-        for dir_file in glob.glob(dir_path + '/**'):
-            if not os.path.isfile(dir_file): # if it's a nested directory
-                self.upload_folder(dir_file, num_files, curr_file, og_dir)
-            else:
-                if '/' in dir_file:
-                    print("Uploading file " + str(curr_file) + " out of " + str(num_files) + " files")
-                    self.update_prog(curr_file, num_files)
-                    curr_file += 1
-                    file_path = dir_file[dir_file.find(og_dir):]
-                    if len(self.destination_folder) == 0:
-                        upload_obj.upload_wrapper(file_path[1:], dir_file)
-                    else:
-                        upload_obj.upload_wrapper(self.destination_folder + file_path, dir_file)
+        dir_path = self.file_paths[0]
+        top_dir = dir_path[dir_path.rfind("/"):] # top directory name
+        num_files = 0
+        # count number of total files
+        for files in os.walk(dir_path):
+            dir_files = files[2]
+            for f in dir_files:
+                if not f.startswith("."):
+                    num_files += 1
+        curr_file = 1
+        # go through all files in dir_path
+        files = []
+        for filename in glob.iglob(dir_path + '**/**', recursive=True):
+            if os.path.isfile(filename):
+                files.append(filename)
+                self.curr_file_name.setText("Uploading " + filename) # update current folder label
+                self.update_prog(curr_file, num_files) # update progress bar
+                curr_file += 1
+                file_path = filename[filename.find(top_dir):]
+                if len(self.destination_folder) == 0:
+                    upload_obj.upload_wrapper(file_path[1:], filename)
+                else:
+                    upload_obj.upload_wrapper(self.destination_folder + file_path, filename)
+        # do after-upload processing
+        self.after_upload_process(files)
 
     def update_prog(self, curr_file, num_files):
         perc_comp = int(float(curr_file)/float(num_files) * 100)

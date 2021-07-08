@@ -133,7 +133,7 @@ class App(QWidget):
         self.uploading_file = False
         dialog = QFileDialog()
         dialog.setViewMode(QFileDialog.Detail)
-        dialog.setDirectory("/")  # TODO: change based on system
+        dialog.setDirectory("/")
         dialog.setFileMode(QFileDialog.DirectoryOnly)
         dialog.setOption(QFileDialog.ShowDirsOnly,True)
         dir_path = dialog.getExistingDirectory(None, "Select Folder")
@@ -158,10 +158,15 @@ class App(QWidget):
                 shutil.rmtree(self.file_paths[0])
                 self.curr_file_name.setText("Deleted local directory: " + self.file_paths[0])
         else:
-            for file in files_uploaded:
-                file_name = file[file.rfind("/")+1:]
-                os.rename(file, file[:file.rfind("/")+1] + "uploaded_" + file_name)
-                self.curr_file_name.setText("Renamed local file: " + file)
+            if self.uploading_file:
+                for file in files_uploaded:
+                    file_name = file[file.rfind("/")+1:]
+                    os.rename(file, file[:file.rfind("/")+1] + "uploaded_" + file_name)
+                    self.curr_file_name.setText("Renamed local filue: " + file)
+            else:
+                top = self.file_paths[0]
+                file_name = top[top.rfind("/") + 1:]
+                os.rename(top, top[:top.rfind("/")+1] + "uploaded_" + file_name)
 
     @pyqtSlot()
     def upload_file(self):

@@ -1,0 +1,269 @@
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/PWR 2KSB/PWR2 Proposal.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/PWR 2KSB/chris_writing_to_think.docx
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/PWR 2KSB/brandon_pwr.docx
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/PWR 2KSB/PWR2 Draft Proposal.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/PWR 2KSB/serena_pwr.docx
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/PWR 2KSB/4_1 Assignment.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Math 108/Math_108_Pset_1.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Math 108/Math_108_Pset_2.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 178/EE_178_HW_1.ipynb
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 178/EE_178_HW_3.ipynb
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 178/EE178_HW3.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 178/EE178_HW1.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 178/Quizzes/EE178_Q2.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 178/Quizzes/EE178_Q3.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 178/Quizzes/EE178_Q1.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 2/filter_time.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 2/chord.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 2/filter.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 2/hw_2.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 2/c5.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/row_1_number_comp.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/hw_3.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/row_1_number.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/col_1_number_comp.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/hamming_good.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/hamming_bad.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/col_1_number_comp.fig
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/col_1_number.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/row_1_number_comp.fig
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/dig_5.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/dig_7.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/dig_3.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/tt_test_cases.mat
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/dig_0.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/find_play_times.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/decode_tt.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 3/ttdial.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/4_fr_1.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/pzplot.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/4_fr_surf.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/4_fr_2.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/EE_102B_HW6.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/fr_surf.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/3_freq_surf.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/fr_plot.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/4_pz.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/1_zeros_poles.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/ee102b_hw6.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/draw_pz_plot.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/2_freq_resp.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 6/hw_6.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 1/chirp_freq.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 1/f_vs_t_1.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 1/f_vs_t_2.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 1/ee_102b_hw1.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/myspectogram1.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/spect_4_1024.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/hw_7.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/myspectogram2.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/spect_4_128.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/spect_4_512.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/myspectogram.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/oboe_trim.m4a
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/myspectogram3.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/spect_4_256.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/sg_plot.m
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/sounds.mat
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/spect_oboe.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/spect_2.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/spect_3.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/oboe.m4a
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/EE 102B/HW 7/spect_1.jpg
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/teensy_pins.png
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/Oboe_Test/Oboe_Test.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/Oboe_Test/OboeTest.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/Oboe_Test/OboeTest.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/oboe.html
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/oboe_niobe/Oboe.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/oboe_niobe/Oboe.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/oboe_niobe/oboe_niobe.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/oboe_files/c34389ba09baeb2b990e.js
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/oboe_files/faust-ui.js
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/oboe_files/index.js
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/oboe_files/0730b98e9dc953c16426.js
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/oboe_files/981c5d798cb5ee731440.js
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/oboe_files/faust-ui.html
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/oboe_files/saved_resource.html
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/OboeNiobe/OboeNiobe.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/OboeNiobe/OboeNiobe.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/OboeNiobe/oboeniobe/OboeNiobe.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/OboeNiobe/oboeniobe/OboeNiobe.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/OboeNiobe/oboeniobe/oboeniobe.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 2/Music_250A_HW2 - SD 480p.mov
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/CE3_piezo_holder_wider.gcode
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/piezo_holder.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/CE3_chop_holder.gcode
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/CE3_pot_dial_strong.gcode
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_clock_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/CE3_pot_dial_adj.gcode
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/Guit_Inst.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/chop_holder_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/Music_250A_HW_5.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/lib-gears-test.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/Music 250A HW 5-Parts.pdf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/chop_holder.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_clock.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_dial.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_dial_strong.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/lib-worm-dh.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/CE3_pot_clock_2.gcode
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/chop_fulc.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/CE3_pot_clock_wider.gcode
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_dial_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/piezo_holder_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_dial_long.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/chop_holder_adj.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_clock.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/Music_250A_HW_5.mscz
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_clock_wider.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/piezo_holder_wider.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_dial_clock.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/chop_holder_long.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/lib-gear-dh.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_dial_adj.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/guit_inst/Guit_Inst.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/guit_inst/guit_inst.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/guit_inst/Guit_Inst.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/chop_fulc_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/keybutton.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_clock_2.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/gears/worm-gear.png
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/gears/lib-gear-dh_eng.txt
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/gears/lib-gears-test.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/gears/lib-worm-dh.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/gears/lib-gear-dh.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/Guit_Inst.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_dial_adj2.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/pot_clock_wider_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 5/key_button_bigger.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/sensorTest/sensorTest.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/flute_test/Flute_test.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/flute_test/flute_test.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/flute_test/Flute_test.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/flute_perc/flute_perc.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/flute_perc/Flute_Perc.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/flute_perc/Flute_Perc.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/flute_perc/Music_250A_HW_4 - SD 480p.mov
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/playback/Playback.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/playback/Playback.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/playback/playback.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/Music_250A_HW_4.mscz
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/ns_test/NS_test.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/ns_test/NS_test.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/ns_test/ns_test.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/nylonString/NylonString.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/nylonString/nylonString.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/nylonString/NylonString.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/russianBell/RussianBell.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/russianBell/russianBell.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/russianBell/RussianBell.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/ks_test/ks_test.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/ks_test/KS_test.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 4/ks_test/KS_test.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/guitar/Guitar.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/guitar/guitar.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/guitar/Guitar.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/Drum_guitar/Drum_guitar.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/Drum_guitar/Drum_guitar.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/Drum_guitar/drum_guitar_test/Drum_guitar.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/Drum_guitar/drum_guitar_test/Drum_guitar.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/Drum_guitar/drum_guitar_test/drum_guitar_test.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/fsr_test/FaustSawtooth.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/fsr_test/FaustSawtooth.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/fsr_test/fsr_test.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/wah/wah.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/wah/Wah.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/wah/Music_250_HW_3 - SD 480p.mov
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/wah/wah.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/wah/Wah.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/additiveSynth/additiveSynth.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/additiveSynth/AdditiveSynth.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 3/additiveSynth/AdditiveSynth.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Faust starter code/looper.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Faust starter code/fm.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Faust starter code/fancyWaveshapeSynth.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Faust starter code/am.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Faust starter code/additiveSynth.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Faust starter code/subtract.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Faust starter code/basic.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Faust starter code/polyLooper.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Faust starter code/funnyDjembe.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Faust starter code/harmFm.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Faust starter code/ks.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Faust starter code/waveshapeSynth.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Teensyduino/FaustZita/faustzita/faustzita.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Teensyduino/FaustZita/faustzita/FaustZita.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Teensyduino/FaustZita/faustzita/FaustZita.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Teensyduino/oboe_niobe/Oboe.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Teensyduino/oboe_niobe/Oboe.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Teensyduino/oboe_niobe/oboe_niobe.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Teensyduino/Sawtooth Tutorial/faustSawtooth/FaustSawtooth.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Teensyduino/Sawtooth Tutorial/faustSawtooth/faustSawtooth.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Teensyduino/Sawtooth Tutorial/faustSawtooth/FaustSawtooth.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/plastic_pin_schem_1.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/base_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/magnet_sensor_test/magnet_sensor_test.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/pin_wheel.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/arduino_holder_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/base_top_bot.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/wheel_close_up.HEIC
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/full_wheel.HEIC
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/double_pin_wheel.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/pin_wheel_full.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/corkboard_wheel_tight.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/final_pinwheel_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/plastic_pin_1.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/peg_spikes_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/peg_spikes.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/corkboard_wheel.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/pin_wheel_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/pin_wheel_one_ bar.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/flute_final/Flute_Final.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/flute_final/flute_final.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/flute_final/Flute_Final.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Music_250A_Final_Project.mscz
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/pw_pegs.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/base_axel.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Music_250A_Final_Project_README.rtf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files.zip
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files/base_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files/arduino_holder_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files/wheel_close_up.HEIC
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files/full_wheel.HEIC
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files/final_pinwheel_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files/flute_final/Flute_Final.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files/flute_final/flute_final.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files/flute_final/Flute_Final.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files/Music_250A_Final_Project.mscz
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files/flute_final.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files/Music_250A_Final_Project_README.rtf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files 2/base_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files 2/arduino_holder_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files 2/wheel_close_up.HEIC
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files 2/full_wheel.HEIC
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files 2/final_pinwheel_schem.scad
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files 2/flute_final/Flute_Final.cpp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files 2/flute_final/flute_final.ino
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files 2/flute_final/Flute_Final.h
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files 2/Music_250A_Final_Project.mscz
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files 2/flute_final.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/Final_Files 2/Music_250A_Final_Project_README.rtf
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/wheel_leg.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/Final Project/pin_wheel__new.stl
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/fun_flute/additiveSynth.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/fun_flute/fun_flute.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/fun_flute/blowbottle.dsp
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/fun_flute.dsp.html
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/fun_flute.dsp_files/c34389ba09baeb2b990e.js
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/fun_flute.dsp_files/faust-ui.js
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/fun_flute.dsp_files/index.js
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/fun_flute.dsp_files/0730b98e9dc953c16426.js
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/fun_flute.dsp_files/faust-ui.html
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/fun_flute.dsp_files/saved_resource.html
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/echo_sound.mov
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/music_250a_hw1 - SD 480p.mov
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/music 250a HW 1/audio_only.m4a
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/music 250a HW 1/audio_only_1.m4a
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/music 250a HW 1/playback.m3u
+/Users/rinnibhansali/Documents/Stanford/Sophomore/Spring/Music 250a/HW 1/music 250a HW 1/zoom_1.mp4

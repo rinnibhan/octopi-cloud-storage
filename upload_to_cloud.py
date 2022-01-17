@@ -3,7 +3,7 @@ from google.cloud import storage
 
 class UploadCloud():
 
-    def __init__(self, user_name, key_folder="/Users/rinnibhansali/Documents/Stanford/Sophomore/Research/Oct_Storage/", key_file="", bucket_name="", serv_acc_user="", project_id="soe-octopi"):
+    def __init__(self, user_name, key_folder="/Users/rinnibhansali/Documents/Stanford/Research/Oct_Storage/", key_file="", bucket_name="", serv_acc_user="", project_id="soe-octopi"):
         self.user_name = user_name
         self.key_folder = key_folder
         self.key_file = key_file
@@ -30,18 +30,18 @@ class UploadCloud():
     def upload_blob(self, destination_blob_name, source_file_name):
         # source_file_name: path to file/directory to upload
         # destination_blob_name = name to assign the uploaded object in the bucket
-
         storage_client = storage.Client()
         bucket = storage_client.bucket(self.bucket_name)
         blob = bucket.blob(destination_blob_name)
 
         blob.upload_from_filename(source_file_name)
 
-        print(
-            "File {} uploaded to {}.".format(
-                source_file_name, destination_blob_name
-            )
-        )
+        # low-level information: which file is printing where
+        # print(
+        #     "File {} uploaded to {}.".format(
+        #         source_file_name, destination_blob_name
+        #     )
+        # )
 
     # wrapper upload function
     def upload_wrapper(self, destination_name, source_file):
@@ -50,4 +50,4 @@ class UploadCloud():
 
 if __name__ == '__main__':
     upload_obj = UploadCloud("rinni")
-    upload_obj.upload_wrapper("new_upload2","/Users/rinnibhansali/Documents/Stanford/Sophomore/Research/upload-test/test.txt")
+    # upload_obj.upload_wrapper("new_upload2","/Users/rinnibhansali/Documents/Stanford/Sophomore/Research/upload-test/test.txt")

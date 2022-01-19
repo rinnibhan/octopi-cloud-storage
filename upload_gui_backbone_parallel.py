@@ -5,6 +5,7 @@ import sys
 import glob
 import os
 import shutil
+from pathos.multiprocessing import ProcessingPool as Pool
 
 import upload_to_cloud_parallel
 
@@ -16,9 +17,9 @@ class App(QWidget):
         self.title = 'Octopi File Upload'
         self.user_name = user_name # name of user
         self.file_paths = []  # paths of file(s)/folder to upload
+        self.files_name_tuples = [] # name tuples (name + top dir path) for all files that will be uploaded
         self.uploading_file = True  # true: uploading file(s); false: uploading a folder
         self.destination_folder = ""  # name of destination folder in bucket to upload to (if blank, upload directly into bucket)
-        self.q = ""
         self.initUI()
 
     # design UI setup
@@ -163,7 +164,7 @@ class App(QWidget):
                 for file in files_uploaded:
                     file_name = file[file.rfind("/")+1:]
                     os.rename(file, file[:file.rfind("/")+1] + "uploaded_" + file_name)
-                    self.curr_file_name.setText("Renamed local file: " + file)
+                    self.curr_file_name.setText("Renamed local filue: " + file)
             else:
                 top = self.file_paths[0]
                 file_name = top[top.rfind("/") + 1:]
@@ -191,32 +192,35 @@ class App(QWidget):
 
     @pyqtSlot()
     def upload_folder(self):
-        # if there's no old upload process (that might've crashed)
-        if not os.exists("files_to_upload.txt"):
-            self.expand_files_to_save()
-        # upload all files in files_to_upload.txt
-        upload_list_file = open("files_to_upload.txt", "r")
-        files_to_upload = upload_list_file.readlines()
-
-
-    def update_files_uploaded(self.q):
-        # check
-
-
-    # expand files to save from the selected folder; initialize files_to_upload.txt
-    def expand_files_to_save(self):
+        # upload_obj = upload_to_cloud_parallel.UploadCloudPar(self.user_name)
         dir_path = self.file_paths[0]
-        top_dir = dir_path[dir_path.rfind("/"):] # top directory name
-        num_files = 0
-        # create new, expanded list of file paths
-        expanded_file_paths = []
-        with open('files_to_upload.txt', 'w') as f:
-            for filename in glob.iglob(dir_path + '**/**', recursive=True):
-                if os.path.isfile(filename):
-                    num_files += 1
-                    expanded_file_paths.append(filename)
-                    f.write("%s\n" % filename)
-        self.file_paths = expanded_file_paths
+        top_dir = dir_path[dir_path.rfind("/"):]  # top directory name
+        # go through all files in dir_path and make both list of file name tuples (with file name and top dir -> file path)
+        for filename in glob.iglob(dir_path + '**/**', recursive=True):
+            if os.path.isfile(filename):
+                filepath_for_upload = filename[filename.find(top_dir):]
+                file_name_tuple = (filename, filepath_for_upload)
+                self.files_name_tuples.append(file_name_tuple)
+        file_range = range(0, len(self.files_name_tuples))
+        pool = Pool()
+        pool.map(self.upload_and_delete_one_file, file_range)
+
+    # curr_file = file # we are currently on (for multiprocessing)
+    def upload_and_delete_one_file(self, curr_file):
+        upload_obj = upload_to_cloud_parallel.UploadCloudPar(self.user_name)
+        dir_path = self.file_paths[0]
+        file_name_tuple = self.files_name_tuples[curr_file]
+        filename = file_name_tuple[0]
+        filepath_for_upload = file_name_tuple[1]
+        n = len(self.files_name_tuples)
+        # upload file to GCS
+        if len(self.destination_folder) == 0:
+            upload_obj.upload_wrapper(filepath_for_upload[1:], filename)
+        else:
+            upload_obj.upload_wrapper(self.destination_folder + filepath_for_upload, filename)
+        # now delete file locally
+        os.remove(dir_path + "/" + filename)
+        # self.curr_file_name.setText("Deleted local file: " + filename)
 
     def update_prog(self, curr_file, num_files):
         perc_comp = int(float(curr_file)/float(num_files) * 100)
